@@ -1,0 +1,22 @@
+// Online C compiler to run C program online
+// Using getchar with strings
+#include <stdio.h>
+#include<string.h>
+int main()
+{
+    int i=0;
+    char ch;
+    char s[20];
+    printf("Enter a character:");
+    ch=getchar();
+    while((s[i]=getchar())!='\n')
+    {
+    if(s[i]!='\0')
+    {
+        putchar(s[i]);
+    }
+    i++;
+    }
+    s[i]='\0';
+    return 0;
+}
